@@ -1,7 +1,7 @@
 const API_URL = import.meta.env.VITE_API_URL;
 
 export async function loginAdmin({ identifier, password }) {
-  const res = await fetch(`${API_URL}/auth/local`, {
+  const res = await fetch(`${API_URL}/api/auth/local`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
