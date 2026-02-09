@@ -4,8 +4,13 @@ import { getPrecoDestino } from "../utils/preco";
 const CardDestino = ({ destino }) => {
   const { Imagem, Destino, Descricao } = destino;
   const { precoFinal, precoOriginal, isPromocao } = getPrecoDestino(destino);
+  const API_URL = import.meta.env.VITE_API_URL;
 
-  const imageUrl = `http://localhost:1337${Imagem.url}`;
+  const imageUrl = Imagem?.url
+    ? Imagem.url.startsWith("http")
+      ? Imagem.url
+      : `${API_URL}${Imagem.url}`
+    : "/placeholder.jpg";
 
   return (
     <CardBase

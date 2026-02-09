@@ -3,7 +3,14 @@ import CardBase from "./CardBase";
 const CardServico = ({ servico }) => {
   const { Imagem, Titulo, Descricao } = servico;
 
-  const imageUrl = `http://localhost:1337${Imagem.url}`;
+  const API_URL = import.meta.env.VITE_API_URL;
+
+  const imageUrl = Imagem?.url
+    ? Imagem.url.startsWith("http")
+      ? Imagem.url
+      : `${API_URL}${Imagem.url}`
+    : "/placeholder.jpg";
+
   return (
     <CardBase
       imageUrl={imageUrl}

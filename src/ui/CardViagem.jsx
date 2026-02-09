@@ -14,8 +14,13 @@ const CardViagem = ({ destino, ctaText = "Ver detalhes", onCtaClick }) => {
   } = destino;
 
   const { precoFinal, precoOriginal, isPromocao } = getPrecoDestino(destino);
+  const API_URL = import.meta.env.VITE_API_URL;
 
-  const imageUrl = Imagem?.url ? `http://localhost:1337${Imagem.url}` : null;
+  const imageUrl = Imagem?.url
+    ? Imagem.url.startsWith("http")
+      ? Imagem.url
+      : `${API_URL}${Imagem.url}`
+    : "/placeholder.jpg";
 
   const formatCurrency = (value) =>
     value?.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
