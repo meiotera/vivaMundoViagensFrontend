@@ -14,7 +14,14 @@ const DestinoDetails = ({ destino }) => {
     Imagem,
   } = destino;
 
-  const imageUrl = Imagem?.url ? `http://localhost:1337${Imagem.url}` : null;
+  const API_URL = import.meta.env.VITE_API_URL;
+
+  const imageUrl = Imagem?.url
+    ? Imagem.url.startsWith("http")
+      ? Imagem.url
+      : `${API_URL}${Imagem.url}`
+    : "/placeholder.jpg";
+
   const formatDate = (date) =>
     date ? new Date(date).toLocaleDateString("pt-BR") : "---";
   const formatCurrency = (value) =>
