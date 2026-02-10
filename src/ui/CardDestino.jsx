@@ -29,8 +29,7 @@ const CardDestino = ({ destino }) => {
           )}
 
           <p className="text-orange-500 font-extrabold text-2xl">
-            <span className="text-base font-medium">R$ </span>
-            {precoFinal.toFixed(2).replace(".", ",")}
+            {formatCurrency(precoFinal)}
           </p>
 
           <span className="text-xs text-gray-500">por pessoa</span>
