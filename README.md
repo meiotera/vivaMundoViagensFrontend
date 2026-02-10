@@ -26,6 +26,26 @@ O projeto permite exibir destinos, preços promocionais, datas, companhias aére
 
 ---
 
+### Screenshots
+
+###### Home
+
+![Home](./public/headerHome.png)
+
+![destaques](./public/destaquesHome.png)
+
+![serviços](./public/servicosFooter.png)
+
+![página de contato](./public/paginaContato.png)
+
+###### Dashboard
+
+![adcionar destino](./public/formDestinos.png)
+
+![tabela destino](./public/tabelaDestinos.png)
+
+---
+
 ## 📂 Estrutura do Projeto
 
 ```bash
