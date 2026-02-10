@@ -1,16 +1,40 @@
-# React + Vite
+# 🌍 VivaMundo – Agência de Viagens
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **VivaMundo** é uma aplicação web moderna para divulgação e visualização de pacotes de viagens, desenvolvida com **React + Vite**, focada em performance, boa experiência do usuário e fácil integração com backend (Strapi / APIs externas).
 
-Currently, two official plugins are available:
+O projeto permite exibir destinos, preços promocionais, datas, companhias aéreas e imagens, simulando o site de uma agência de viagens real.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
 
-## Expanding the ESLint configuration
+- ⚛️ **React 19**
+- ⚡ **Vite**
+- 🎨 **Tailwind CSS**
+- 🔄 **React Router DOM**
+- 📦 **React Query (TanStack Query)**
+- 📝 **React Hook Form**
+- 🔔 **React Hot Toast**
+- 🎯 **Lucide React (ícones)**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend / Integrações
+
+- 🔐 **Strapi** (autenticação / dados – opcional)
+- 🌐 **API REST**
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+src/
+├── ui/        # Componentes reutilizáveis (CardViagem, Button, etc)
+├── pages/             # Páginas da aplicação
+├── services/          # Integração com APIs
+├── utils/             # Funções utilitárias (ex: cálculo de preço)
+├── hooks/             # Hooks customizados
+├── routes/            # Configuração de rotas
+└── main.jsx           # Entry point
+```

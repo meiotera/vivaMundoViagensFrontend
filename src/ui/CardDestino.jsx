@@ -6,6 +6,9 @@ const CardDestino = ({ destino }) => {
   const { precoFinal, precoOriginal, isPromocao } = getPrecoDestino(destino);
   const API_URL = import.meta.env.VITE_API_URL;
 
+  const formatCurrency = (value) =>
+    value?.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+
   const imageUrl = Imagem?.url
     ? Imagem.url.startsWith("http")
       ? Imagem.url
@@ -21,7 +24,7 @@ const CardDestino = ({ destino }) => {
         <>
           {isPromocao && (
             <p className="text-sm text-gray-400 line-through">
-              R$ {precoOriginal.toFixed(2).replace(".", ",")}
+              R$ {formatCurrency(precoOriginal)}
             </p>
           )}
 
