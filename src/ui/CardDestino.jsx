@@ -24,7 +24,7 @@ const CardDestino = ({ destino }) => {
         <>
           {isPromocao && (
             <p className="text-sm text-gray-400 line-through">
-              R$ {formatCurrency(precoOriginal)}
+              {formatCurrency(precoOriginal)}
             </p>
           )}
 

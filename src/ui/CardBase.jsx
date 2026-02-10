@@ -27,7 +27,9 @@ const CardBase = ({
         <Heading tag="h3">{title}</Heading>
 
         {description && (
-          <p className="text-gray-600 text-sm mb-4">{description}</p>
+          <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+            {description}
+          </p>
         )}
 
         {/* Rodapé customizável */}
