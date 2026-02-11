@@ -3,7 +3,7 @@
 O **VivaMundo** é uma aplicação web moderna para divulgação e visualização de pacotes de viagens, desenvolvida com **React + Vite**, focada em performance, boa experiência do usuário e fácil integração com backend (Strapi / APIs externas).
 
 O projeto permite exibir destinos, preços promocionais, datas, companhias aéreas e imagens, simulando o site de uma agência de viagens real.
-
+[Acesse](https://vivamundoviagens.netlify.app/)
 ---
 
 ## 🚀 Tecnologias Utilizadas
@@ -21,7 +21,7 @@ O projeto permite exibir destinos, preços promocionais, datas, companhias aére
 
 ### Backend / Integrações
 
-- 🔐 **Strapi** (autenticação / dados – opcional)
+- 🔐 **Strapi** (autenticação)
 - 🌐 **API REST**
 
 ---
